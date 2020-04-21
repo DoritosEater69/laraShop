@@ -1,0 +1,46 @@
+@keyframes slideFromTop {
+  0% {
+        top: -200px;
+    }
+
+  100% {
+        top: 0px;
+    }
+}
+
+
+.cat-overlay:hover {
+overflow:hidden;
+  animation-name: slideFromTop;
+  animation-duration: 1s;
+}
+
+
+@keyframes rotateNavItem {
+  0% {
+    font-size: 3em;
+  }
+  100% {
+    font-size: 4em;
+  }
+}
+
+nav a:hover{
+    animation: 0.7s rotateNavItem;
+    animation-fill-mode:forwards;
+}
+
+
+@keyframes headline {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+
+.overlayHeadline{
+    animation: 1s headline;
+    animation-fill-mode:forwards;
+}

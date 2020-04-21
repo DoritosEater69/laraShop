@@ -1,0 +1,9 @@
+[24-Mar-2020 12:52:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /var/www/html/git/_programming/web/laraShop/bootstrap/app.php:14
+Stack trace:
+#0 /var/www/html/git/_programming/web/laraShop/public/index.php(36): require_once()
+#1 {main}
+  thrown in /var/www/html/git/_programming/web/laraShop/bootstrap/app.php on line 14
+[24-Mar-2020 12:53:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function make() on null in /var/www/html/git/_programming/web/laraShop/public/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/git/_programming/web/laraShop/public/index.php on line 51
