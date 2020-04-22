@@ -10882,3 +10882,179 @@ a.text-dark:focus {
   }
 }
 
+li,
+ul {
+  list-style-type: none !important;
+}
+
+@-webkit-keyframes slideFromTop {
+  0% {
+    opacity: 0;
+    top: -200px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0%;
+  }
+}
+
+@keyframes slideFromTop {
+  0% {
+    opacity: 0;
+    top: -200px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0%;
+  }
+}
+
+.cat .cat-overlay:hover {
+  overflow: hidden;
+  -webkit-animation-name: slideFromTop;
+          animation-name: slideFromTop;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes linkGrow {
+  0% {
+    font-size: 3em;
+  }
+
+  100% {
+    font-size: 4em;
+  }
+}
+
+@keyframes linkGrow {
+  0% {
+    font-size: 3em;
+  }
+
+  100% {
+    font-size: 4em;
+  }
+}
+
+nav a:hover {
+  -webkit-animation: 0.7s linkGrow;
+          animation: 0.7s linkGrow;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes headline {
+  0% {
+    top: -50%;
+  }
+
+  100% {
+    top: 30%;
+  }
+}
+
+@keyframes headline {
+  0% {
+    top: -50%;
+  }
+
+  100% {
+    top: 30%;
+  }
+}
+
+.overlayHeadline {
+  -webkit-animation: 1s headline;
+          animation: 1s headline;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+p {
+  font-family: "Bebas Neue";
+  font-size: 2em;
+}
+
+h2 {
+  font-family: "Bebas Neue";
+  border-bottom: 4px solid black;
+}
+
+header {
+  background-color: black;
+  color: white;
+}
+
+header img {
+  overflow: hidden;
+}
+
+header a {
+  text-decoration: none !important;
+  color: white !important;
+  font-family: "Bebas Neue";
+  font-size: 4em;
+}
+
+header a:hover {
+  background-color: white;
+  color: black !important;
+}
+
+.overlayHeadline {
+  font-family: "Bebas Neue";
+  position: absolute;
+  font-size: 8em;
+  background-color: black;
+}
+
+.highlight {
+  background-color: #e8b923 !important;
+}
+
+.cat {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cat-overlay {
+  position: absolute;
+  opacity: 0;
+  z-index: 9999;
+  top: 0%;
+  height: 100%;
+  color: white;
+  padding-right: 30px;
+  padding-top: 30px;
+  border-bottom: 38px solid white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay-header {
+  font-family: "Bebas Neue";
+  font-size: 2em;
+}
+
+.blog a {
+  font-family: "Bebas Neue";
+  text-decoration: none;
+  color: #e8b923 !important;
+  font-size: 2em;
+}
+
+.price {
+  color: #e8b923 !important;
+  font-size: 3em;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+

@@ -4,7 +4,7 @@
     <header class="container-fluid mx-0 px-0">
       <div class="row d-flex align-items-center flex-row flex-md-row-reverse">
         <div class="col-12 col-md-6 text-center">
-          <h1 class="overlayHeadline p-3">Headline</h1>
+          <h1 class="overlayHeadline p-3">Fancy</h1>
           <img src="{{ secure_asset('images/head.jpg') }}" class="img-fluid w-100 h-100">
         </div>
         <nav class="col-12 col-md-6 text-left my-5 d-flex flex-column pl-5">
@@ -34,7 +34,7 @@
 
       <div class="row">
         <div class="col-12 d-flex justify-content-center">
-          <p>Male</p> / <p>Female</p>
+          <p>Male / Female</p>
         </div>
       </div>
 
@@ -43,7 +43,7 @@
           <a href="#">
           <img src="{{ secure_asset('images/hood.jpg') }}" alt="" class="img-fluid">
           <div class="cat-overlay d-flex justify-content-center align-items-center">
-            <div class="overlay-header h-50 w-100 pl-4">Men - Hoodies
+            <div class="overlay-header h-50 w-100 pl-4">Female - Hoodies
               <p class="overlay-text">I'm baby chia VHS dreamcatcher</p>
             </div>
           </div>
@@ -82,7 +82,7 @@
       </div>
 </main>
 
-<div class="container">
+<div class="container blog">
       <div class="row mb-5">
         <div class="col-12 d-none d-md-flex justify-content-center my-4">
           <h2>Our Vision.</h2>
@@ -176,14 +176,14 @@
         <h2 class="w-50 mx-auto">Meet us</h2>
       </div>
         <div class="col-12 text-center w-100 mx-0 px-0 py-2">
-          Asymmetrical keffiyeh copper mug, fashion axe cray taxidermy four loko YOLO church-key chambray etsy palo santo dreamcatcher. Mumblecore kitsch skateboard squid, polaroid austin craft beer hell of flexitarian.
+          <p>Asymmetrical keffiyeh copper mug, fashion axe cray taxidermy four loko YOLO church-key chambray etsy palo santo dreamcatcher. Mumblecore kitsch skateboard squid, polaroid austin craft beer hell of flexitarian.</p>
         </div>
       </div>
     </div>
 
     <footer class="container-fluid py-5 mt-5">
       <div class="row d-flex justify-content-center">
-        <div class="col-12 col-md-6 flex-column text-center text-md-left">
+        <div class="col-12 col-md-7 flex-column text-center text-md-left">
             <img src="http://via.placeholder.com/150x150" class="img-fluid"><br>
             <small>Lorem ipsum dolor sit amet, et populo delectus nam. Nec te duis clita conclusionemque. Ut voluptua mediocritatem usu, ad novum nostro pericula cum.</small><br>
             <small>@2019 Lorem ipsum dolor</small>

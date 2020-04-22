@@ -15,6 +15,21 @@ Route::get('/', function () {
     return view('frontend.home.welcome');
 });
 
+Route::get('/hoodies', function () {
+    return view('frontend.partials.hoodies');
+});
+
+Route::get('/pants', function () {
+    return view('frontend.partials.pants');
+});
+
+Route::get('/shirts', function () {
+    return view('frontend.partials.shirts');
+});
+
+Route::get('/shoes', function () {
+    return view('frontend.partials.shoes');
+});
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');

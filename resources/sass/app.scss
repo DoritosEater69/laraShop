@@ -7,4 +7,95 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+//Overwrite Classes
+@import 'overwrite';
 
+//Keyframe Animations
+@import 'keyframes';
+
+
+p{
+    font-family: 'Bebas Neue';
+    font-size: 2em;
+}
+
+h2{
+    font-family: 'Bebas Neue';
+    border-bottom: 4px solid black;
+}
+
+header{
+    background-color: black;
+    color: white;
+}
+
+header img{
+    overflow: hidden;
+}
+
+header a{
+    text-decoration: none !Important;
+    color: white !Important;
+    font-family: 'Bebas Neue';
+    font-size: 4em;
+}
+
+header a:hover{
+    background-color: white;
+    color: black !Important;
+}
+
+
+.overlayHeadline{
+    font-family: 'Bebas Neue';
+    position: absolute;
+    font-size: 8em;
+    background-color: black;
+}
+
+.highlight{
+    background-color: #e8b923 !important;
+}
+
+.cat{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cat-overlay{
+    position: absolute;
+    opacity: 0;
+    z-index: 9999;
+    top: 0%;
+    height: 100%;
+    color: white;
+    padding-right: 30px;
+    padding-top: 30px;
+    border-bottom: 38px solid white;
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+.overlay-header{
+    font-family: 'Bebas Neue';
+    font-size: 2em;
+}
+
+.blog a{
+    font-family: 'Bebas Neue';
+    text-decoration: none;
+    color: #e8b923 !important;
+    font-size: 2em;
+}
+
+.price{
+    color: #e8b923 !important;
+    font-size: 3em;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+}

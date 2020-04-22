@@ -1,22 +1,25 @@
 @keyframes slideFromTop {
   0% {
+        opacity: 0;
         top: -200px;
     }
 
   100% {
-        top: 0px;
+        opacity: 1;
+        top: 0%;
     }
 }
 
 
-.cat-overlay:hover {
-overflow:hidden;
+.cat .cat-overlay:hover {
+  overflow: hidden;
   animation-name: slideFromTop;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 
-@keyframes rotateNavItem {
+@keyframes linkGrow {
   0% {
     font-size: 3em;
   }
@@ -26,8 +29,8 @@ overflow:hidden;
 }
 
 nav a:hover{
-    animation: 0.7s rotateNavItem;
-    animation-fill-mode:forwards;
+    animation: 0.7s linkGrow;
+    animation-fill-mode: forwards;
 }
 
 
