@@ -40,7 +40,7 @@
 
       <div class="row overflow-auto mb-5" style="height: 550px;" id="categories">
         <div class="col-12 col-md-6 px-0 mx-0 cat">
-          <a href="#">
+          <a href="{{ route('hoodies') }}">
           <img src="{{ secure_asset('images/hood.jpg') }}" alt="" class="img-fluid">
           <div class="cat-overlay d-flex justify-content-center align-items-center">
             <div class="overlay-header h-50 w-100 pl-4">Female - Hoodies
@@ -50,7 +50,7 @@
         </a>
         </div>
         <div class="col-12 col-md-6 px-0 mx-0 cat">
-          <a href="#">
+          <a href="{{ route('pants') }}">
           <img src="{{ secure_asset('images/pants.jpg') }}" alt="" class="img-fluid">
           <div class="cat-overlay d-flex justify-content-center align-items-center">
             <div class="overlay-header h-50 w-100 pl-4">Men - Pants
@@ -60,7 +60,7 @@
         </a>
         </div>
         <div class="col-12 col-md-6 px-0 mx-0 cat">
-          <a href="#">
+          <a href="{{ route('shirts') }}">
           <img src="{{ secure_asset('images/shirt.jpg') }}" alt="" class="img-fluid">
           <div class="cat-overlay d-flex justify-content-center align-items-center">
             <div class="overlay-header h-50 w-100 pl-4">Men - Shirts
@@ -70,7 +70,7 @@
         </a>
         </div>
         <div class="col-12 col-md-6 px-0 mx-0 cat">
-          <a href="#">
+          <a href="{{ route('shoes') }}">
           <img src="{{ secure_asset('images/shoes.jpg') }}" alt="" class="img-fluid">
           <div class="cat-overlay d-flex justify-content-center align-items-center">
             <div class="overlay-header h-50 w-100 pl-4">Men - Shoes
