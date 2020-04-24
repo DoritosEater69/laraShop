@@ -3,6 +3,13 @@
 @section('content')
     <header class="container-fluid mx-0 px-0">
       <div class="row d-flex align-items-center flex-row flex-md-row-reverse">
+        <div class="col-12 col-md-6 d-flex justify-content-end">
+          <a href="{{ route('home') }}" class="w-100 h-100">
+            <h1 class="overlayBack p-3">Back</h1>
+          </a>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center flex-row flex-md-row-reverse">
         <div class="col-12 col-md-6 text-center">
           <h1 class="overlayHeadline p-3">Shoes</h1>
           <img src="{{ secure_asset('images/female_shoes_header.png') }}" class="img-fluid w-100 h-100">

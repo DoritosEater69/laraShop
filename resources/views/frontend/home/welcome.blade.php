@@ -1,6 +1,13 @@
 @extends('frontend.layouts.app')
 
 @section('content')
+    <div class="row d-flex justify-content-end mr-1">
+      <div class="col-1 text-center loginBar d-flex flex-column py-3 mt-5">
+          <button type="button" class="btn btn-primary mb-3">Sign Up</button>
+          <button type="button" class="btn btn-primary">Register</button>
+      </div>
+    </div>
+
     <header class="container-fluid mx-0 px-0">
       <div class="row d-flex align-items-center flex-row flex-md-row-reverse">
         <div class="col-12 col-md-6 text-center">
@@ -23,7 +30,7 @@
 
     <main class="container">
       <div class="row py-5">
-        <div class="col-12 d-flex justify-content-center flex-nowrap">
+        <div class="col-8 d-flex justify-content-center flex-nowrap">
           <!-- Search Bar -->
           <form class="form-inline my-2 my-lg-0 d-flex flex-row flex-nowrap">
             <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
@@ -43,7 +50,7 @@
           <a href="{{ route('hoodies') }}">
           <img src="{{ secure_asset('images/hood.jpg') }}" alt="" class="img-fluid">
           <div class="cat-overlay d-flex justify-content-center align-items-center">
-            <div class="overlay-header h-50 w-100 pl-4">Female - Hoodies
+            <div class="overlay-header h-100 w-100 pl-4">Female - Hoodies
               <p class="overlay-text">I'm baby chia VHS dreamcatcher</p>
             </div>
           </div>
@@ -53,7 +60,7 @@
           <a href="{{ route('pants') }}">
           <img src="{{ secure_asset('images/pants.jpg') }}" alt="" class="img-fluid">
           <div class="cat-overlay d-flex justify-content-center align-items-center">
-            <div class="overlay-header h-50 w-100 pl-4">Men - Pants
+            <div class="overlay-header h-100 w-100 pl-4">Men - Pants
               <p class="overlay-text">I'm baby chia VHS dreamcatcher, narwhal. </p>
             </div>
           </div>
@@ -63,7 +70,7 @@
           <a href="{{ route('shirts') }}">
           <img src="{{ secure_asset('images/shirt.jpg') }}" alt="" class="img-fluid">
           <div class="cat-overlay d-flex justify-content-center align-items-center">
-            <div class="overlay-header h-50 w-100 pl-4">Men - Shirts
+            <div class="overlay-header h-100 w-100 pl-4">Men - Shirts
               <p class="overlay-text">I'm baby chia, artisan YOLO raclette mixtape. </p>
             </div>
           </div>
@@ -73,7 +80,7 @@
           <a href="{{ route('shoes') }}">
           <img src="{{ secure_asset('images/shoes.jpg') }}" alt="" class="img-fluid">
           <div class="cat-overlay d-flex justify-content-center align-items-center">
-            <div class="overlay-header h-50 w-100 pl-4">Men - Shoes
+            <div class="overlay-header h-100 w-100 pl-4">Men - Shoes
               <p class="overlay-text">I'm baby chia VHS dreamcatcher mixtape. </p>
             </div>
           </div>
@@ -97,14 +104,14 @@
           <div class="card card-body">
               <img src="http://via.placeholder.com/600x300" class="img-fluid">
               <p class="card-title">Copper mug photo booth</p>
-              <p>Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
-              <a href="#">Read more</a>
+              <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
+              <a href="#" class="card-txt text-right">Read more</a>
           </div>
           <div class="card card-body">
             <img src="http://via.placeholder.com/600x300" class="img-fluid">
             <p class="card-title">Copper mug photo booth</p>
-            <p>Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
-            <a href="#">Read more</a>
+            <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
+            <p><a href="#" class="card-txt text-right">Read more</a></p>
           </div>
         </div>
 
@@ -118,13 +125,13 @@
               <img src="http://via.placeholder.com/600x300" class="img-fluid">
               <p class="card-title">Copper mug photo booth</p>
               <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
-              <a href="#" class="card-txt">Read more</a>
+              <a href="#" class="card-txt text-right">Read more</a>
           </div>
           <div class="card card-body">
             <img src="http://via.placeholder.com/600x300" class="img-fluid">
             <p class="card-title">Copper mug photo booth</p>
             <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
-            <a href="#" class="card-txt">Read more</a>
+            <a href="#" class="card-txt text-right">Read more</a>
           </div>
         </div>
 
@@ -134,7 +141,7 @@
           <div class="px-3 pt-3">
             <p class="card-title">Copper mug photo booth</p>
             <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
-            <a href="#" class="card-txt">Read more</a>
+            <a href="#" class="card-txt text-right">Read more</a>
           </div>
         </div>
         <div class="col-6 d-none d-md-flex justify-content-center flex-column">
@@ -142,7 +149,7 @@
           <div class="px-3 pt-3">
             <p class="card-title">Copper mug photo booth</p>
             <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
-            <a href="#" class="card-txt">Read more</a>
+            <a href="#" class="card-txt text-right">Read more</a>
           </div>
         </div>
       </div>
@@ -155,7 +162,7 @@
           <div class="px-3 pt-3">
             <p class="card-title">Copper mug photo booth</p>
             <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
-            <a href="#" class="card-txt">Read more</a>
+            <a href="#" class="card-txt text-right">Read more</a>
           </div>
         </div>
         <div class="col-6 d-none d-md-flex justify-content-center flex-column">
@@ -163,7 +170,7 @@
           <div class="px-3 pt-3">
             <p class="card-title">Copper mug photo booth</p>
             <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
-            <a href="#" class="card-txt">Read more</a>
+            <a href="#" class="card-txt text-right">Read more</a>
           </div>
         </div>
       </div>

@@ -45,6 +45,11 @@ header a:hover{
     color: black !Important;
 }
 
+.loginBar{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 999999;
+}
 
 .overlayHeadline{
     font-family: 'Bebas Neue';
@@ -56,9 +61,19 @@ header a:hover{
 .overlayBack{
     font-family: "Bebas Neue";
     position: absolute;
-    font-size: 4em;
+    font-size: 1em;
     z-index: 99999;
     background-color: black;
+}
+
+.overlayBack:hover{
+    background-color: white;
+    color: black !Important;
+}
+
+.overlay-text{
+    width: 100%;
+
 }
 
 .highlight{
@@ -68,6 +83,7 @@ header a:hover{
 .cat{
     position: relative;
     width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -102,6 +118,9 @@ header a:hover{
     font-size: 3em;
 }
 
+.card-txt{
+    font-size: 1em;
+}
 
 footer{
     background-color: black;
