@@ -11096,6 +11096,10 @@ header a:hover {
   font-size: 1em;
 }
 
+.vision p {
+  font-size: 1.2em;
+}
+
 footer {
   background-color: black;
   color: white;

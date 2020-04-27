@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <div class="row d-flex justify-content-end mr-1">
+    <div class="row d-flex justify-content-end mr-1 fixed-top ">
       <div class="col-1 text-center loginBar d-flex flex-column py-3 mt-5">
           <button type="button" class="btn btn-primary mb-3">Sign Up</button>
           <button type="button" class="btn btn-primary">Register</button>
@@ -102,16 +102,16 @@
 
         <div class="collapse" id="vision">
           <div class="card card-body">
-              <img src="http://via.placeholder.com/600x300" class="img-fluid">
+              <img src="{{ secure_asset('images/vision_header.jpg') }}" class="img-fluid">
               <p class="card-title">Copper mug photo booth</p>
               <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
-              <a href="#" class="card-txt text-right">Read more</a>
+              <a href="{{ route('vision') }}" class="card-txt text-right">Read more</a>
           </div>
           <div class="card card-body">
-            <img src="http://via.placeholder.com/600x300" class="img-fluid">
+            <img src="{{ secure_asset('images/vision_header.jpg') }}" class="img-fluid">
             <p class="card-title">Copper mug photo booth</p>
             <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
-            <p><a href="#" class="card-txt text-right">Read more</a></p>
+            <p><a href="{{ route('vision') }}" class="card-txt text-right">Read more</a></p>
           </div>
         </div>
 
@@ -137,19 +137,19 @@
 
 <!-- DESKTOP -->
         <div class="col-6 d-none d-md-flex flex-column">
-          <img src="http://via.placeholder.com/600x300" class="img-fluid">
+          <img src="{{ secure_asset('images/vision_header.jpg') }}" class="img-fluid">
           <div class="px-3 pt-3">
             <p class="card-title">Copper mug photo booth</p>
             <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
-            <a href="#" class="card-txt text-right">Read more</a>
+            <a href="{{ route('vision') }}" class="card-txt text-right">Read more</a>
           </div>
         </div>
-        <div class="col-6 d-none d-md-flex justify-content-center flex-column">
-          <img src="http://via.placeholder.com/600x300" class="img-fluid">
+        <div class="col-6 d-none d-md-flex flex-column">
+          <img src="{{ secure_asset('images/vision_header.jpg') }}" class="img-fluid">
           <div class="px-3 pt-3">
             <p class="card-title">Copper mug photo booth</p>
             <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
-            <a href="#" class="card-txt text-right">Read more</a>
+            <a href="{{ route('vision') }}" class="card-txt text-right">Read more</a>
           </div>
         </div>
       </div>

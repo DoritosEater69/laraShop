@@ -31,5 +31,10 @@ Route::get('/shoes', function () {
     return view('frontend.partials.shoes');
 })->name('shoes');
 
+Route::get('/vision', function () {
+    return view('frontend.partials.vision');
+})->name('vision');
+
+
 Auth::routes();
 
