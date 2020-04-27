@@ -15,9 +15,10 @@ Route::get('/', function () {
     return view('frontend.home.welcome');
 })->name('home');
 
-Route::get('/hoodies', function () {
-    return view('frontend.partials.hoodies');
-})->name('hoodies');
+Route::get('/hoodies', [
+    'uses' => 'ProductController@getProducts',
+    'as' => 'Product.hoodies'
+]);
 
 Route::get('/pants', function () {
     return view('frontend.partials.pants');

@@ -47,107 +47,23 @@
       </div>
 
     <div class="container-fluid">
-      <div class="row mb-5" id="categories">
-        <div class="col-12 col-md-3 px-0 mx-0 cat" id="hoodie1">
-          <a href="#">
-          <img src="{{ secure_asset('images/female_hoodie1.png') }}" alt="" class="img-fluid">
-          <div class="cat-overlay d-flex justify-content-center align-items-center  w-100">
-            <div class="overlay-header h-50 w-100 pl-4">Female - Hoodies
-              <p class="overlay-text">I'm baby</p>
-              <p class="price text-right">89,-</p>
+      @foreach($products->chunk(4) as $productChunk)
+        <div class="row mb-5" id="categories">
+          @foreach($productChunk as $product)
+            <div class="col-12 col-md-3 px-0 mx-0 cat" id="hoodie1">
+              <a href="#">
+              <img src="{{ $product->imgPath }}" alt="" class="img-fluid">
+              <div class="cat-overlay d-flex justify-content-center align-items-center  w-100">
+                <div class="overlay-header h-50 w-100 pl-4">{{ $product->title }}
+                  <p class="overlay-text">{{ $product->description }}</p>
+                  <p class="price text-right">{{ $product->price }},-</p>
+                </div>
+              </div>
+            </a>
             </div>
-          </div>
-        </a>
-        </div>
-        <div class="col-12 col-md-3 px-0 mx-0 cat">
-          <a href="#">
-          <img src="{{ secure_asset('images/female_hoodie2.png') }}" alt="" class="img-fluid">
-          <div class="cat-overlay d-flex justify-content-center align-items-center  w-100">
-            <div class="overlay-header h-50 w-100 pl-4">Female - Hoodies
-              <p class="overlay-text">I'm lita ad novum</p>
-              <p class="price text-right">129,-</p>
-            </div>
-          </div>
-        </a>
-        </div>
-        <div class="col-12 col-md-3 px-0 mx-0 cat">
-          <a href="#">
-          <img src="{{ secure_asset('images/female_hoodie3.png') }}" alt="" class="img-fluid">
-          <div class="cat-overlay d-flex justify-content-center align-items-center  w-100">
-            <div class="overlay-header h-50 w-100 pl-4">Female - Hoodies
-              <p class="overlay-text">I'm usu, ad novum </p>
-              <p class="price text-right">79,-</p>
-            </div>
-          </div>
-        </a>
-        </div>
-        <div class="col-12 col-md-3 px-0 mx-0 cat">
-          <a href="#">
-          <img src="{{ secure_asset('images/female_hoodie4.png') }}" alt="" class="img-fluid">
-          <div class="cat-overlay d-flex justify-content-center align-items-center  w-100">
-            <div class="overlay-header h-50 w-100 pl-4">Female - Hoodies
-              <p class="overlay-text">mediocritatem usu, ad</p>
-              <p class="price text-right">108,-</p>
-            </div>
-          </div>
-        </a>
-        </div>
-        <div class="col-12 col-md-3 px-0 mx-0 cat">
-          <a href="#">
-          <img src="{{ secure_asset('images/female_and_male_hoodie.png') }}" alt="" class="img-fluid">
-          <div class="cat-overlay d-flex justify-content-center align-items-center  w-100">
-            <div class="overlay-header h-50 w-100 pl-4">Unisex - Hoodies
-              <p class="overlay-text">I'm conclusionemque.</p>
-              <p class="price text-right">60,-</p>
-            </div>
-          </div>
-        </a>
-        </div>
-        <div class="col-12 col-md-3 px-0 mx-0 cat">
-          <a href="#">
-          <img src="{{ secure_asset('images/male_hoodie1.png') }}" alt="" class="img-fluid">
-          <div class="cat-overlay d-flex justify-content-center align-items-center  w-100">
-            <div class="overlay-header h-50 w-100 pl-4">Male - Hoodies
-              <p class="overlay-text">Ut voluptua </p>
-              <p class="price text-right">299,-</p>
-            </div>
-          </div>
-        </a>
-        </div>
-        <div class="col-12 col-md-3 px-0 mx-0 cat">
-          <a href="#">
-          <img src="{{ secure_asset('images/male_hoodie2.png') }}" alt="" class="img-fluid">
-          <div class="cat-overlay d-flex justify-content-center align-items-center  w-100">
-            <div class="overlay-header h-50 w-100 pl-4">Male - Hoodies
-              <p class="overlay-text">I'm ad novum </p>
-              <p class="price text-right">113,-</p>
-            </div>
-          </div>
-        </a>
-        </div>
-        <div class="col-12 col-md-3 px-0 mx-0 cat">
-          <a href="#">
-          <img src="{{ secure_asset('images/male_hoodie3.png') }}" alt="" class="img-fluid">
-          <div class="cat-overlay d-flex justify-content-center align-items-center  w-100">
-            <div class="overlay-header h-50 w-100 pl-4">Male - Hoodies
-              <p class="overlay-text">Ut voluptua nostro </p>
-              <p class="price text-right">200,-</p>
-            </div>
-          </div>
-        </a>
-        </div>
-         <div class="col-12 col-md-3 px-0 mx-0 cat">
-          <a href="#">
-          <img src="{{ secure_asset('images/male_hoodie4.png') }}" alt="" class="img-fluid">
-          <div class="cat-overlay d-flex justify-content-center align-items-center  w-100">
-            <div class="overlay-header h-50 w-100 pl-4">Male - Hoodies
-              <p class="overlay-text">Ut vonovum</p>
-              <p class="price text-right">99,-</p>
-            </div>
-          </div>
-        </a>
-        </div>
+          @endforeach
       </div>
+      @endforeach
   </div>
 
   <div class="container-fluid">
