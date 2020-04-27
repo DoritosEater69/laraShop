@@ -10899,7 +10899,14 @@ ul {
   font-family: "Bebas Neue";
   background-color: inherit !important;
   color: white !important;
-  font-size: 1.7em;
+  font-size: 1em;
+  border-color: white !important;
+}
+
+.btn-primary:hover {
+  font-family: "Bebas Neue";
+  background-color: white !important;
+  color: black !important;
 }
 
 @-webkit-keyframes slideFromTop {
@@ -11023,8 +11030,12 @@ header a:hover {
 
 .loginBar {
   background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
   z-index: 999999;
+}
+
+.loginToggle:hover {
+  background-color: white;
+  fill: black !important;
 }
 
 .overlayHeadline {

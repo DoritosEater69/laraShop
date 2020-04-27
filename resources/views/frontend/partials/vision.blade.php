@@ -40,6 +40,18 @@
       </div>
   </section>
 
+      <section class="container vision">
+      <div class="row py-5">
+        <div class="col-12" id="2">
+            <h2>Our Vision 2</h2>
+            <p>I'm baby jean shorts yr succulents, pickled locavore farm-to-table letterpress knausgaard selfies DIY. La croix lo-fi poutine flannel kogi shoreditch seitan, etsy
+            hoodie iPhone migas. Mlkshk snackwave celiac disrupt. Green juice keytar bitters 8-bit godard. Dreamcatcher aesthetic taiyaki cliche, gentrify authentic selvage succulents.</p>
+            <p>Tumblr 8-bit blue bottle, polaroid four loko food truck four dollar toast chambray artisan humblebrag authentic schlitz blog vice. Unicorn marfa food truck flannel synth vegan yr scenester umami salvia bespoke chicharrones. Vice offal VHS shoreditch readymade flannel skateboard biodiesel air plant raclette. Organic migas chicharrones asymmetrical 8-bit tousled raclette plaid irony.</p>
+            <p>Iceland enamel pin marfa copper mug pug la croix freegan readymade twee taxidermy. Semiotics photo booth pork belly cornhole kickstarter +1 vice flannel tbh wayfarers ramps. Gluten-free subway tile sartorial 8-bit irony, slow-carb godard vape keytar snackwave chicharrones. Typewriter thundercats adaptogen sriracha. Pop-up whatever next level man braid cardigan, squid raw denim la croix ennui master cleanse hella godard drinking vinegar. Af occupy food truck offal cred shoreditch tumblr tattooed hella jean shorts hashtag master cleanse try-hard helvetica. Pour-over blue bottle shoreditch cred pork belly before they sold out echo park tbh actually freegan sriracha DIY portland brooklyn you probably haven't heard of them.</p>
+        </div>
+      </div>
+  </section>
+
   <div class="container-fluid">
     <div class="row mx-0 px-0 mt-5">
       <div class="col-12 text-center mx-0 px-0 py-2">

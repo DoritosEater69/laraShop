@@ -47,8 +47,16 @@ header a:hover{
 
 .loginBar{
     background-color: rgba(0,0,0,0.5);
-    position: absolute;
     z-index: 999999;
+}
+
+.loginToggle{
+
+}
+
+.loginToggle:hover{
+    background-color: white;
+    fill: black !Important;
 }
 
 .overlayHeadline{

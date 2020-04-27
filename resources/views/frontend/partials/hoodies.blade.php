@@ -48,7 +48,7 @@
 
     <div class="container-fluid">
       <div class="row mb-5" id="categories">
-        <div class="col-12 col-md-3 px-0 mx-0 cat">
+        <div class="col-12 col-md-3 px-0 mx-0 cat" id="hoodie1">
           <a href="#">
           <img src="{{ secure_asset('images/female_hoodie1.png') }}" alt="" class="img-fluid">
           <div class="cat-overlay d-flex justify-content-center align-items-center  w-100">

@@ -16,5 +16,12 @@ li, ul{
     font-family: 'Bebas Neue';
     background-color: inherit !Important;
     color: white !important;
-    font-size: 1.7em;
+    font-size: 1em;
+    border-color: white !important;
+}
+
+.btn-primary:hover{
+    font-family: 'Bebas Neue';
+    background-color: white !Important;
+    color: black !important;
 }

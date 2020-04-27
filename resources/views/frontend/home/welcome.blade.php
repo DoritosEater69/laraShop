@@ -1,11 +1,15 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <div class="row d-flex justify-content-end mr-1 fixed-top ">
-      <div class="col-1 text-center loginBar d-flex flex-column py-3 mt-5">
-          <button type="button" class="btn btn-primary mb-3">Sign Up</button>
-          <button type="button" class="btn btn-primary">Register</button>
-      </div>
+    <div class="row d-flex align-items-center justify-content-end mr-1 mt-2 fixed-top">
+        <div class="col-1 text-right">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right loginToggle"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+        <div class="col-2 text-center d-flex flex-column py-3 loginBar">
+            <p class="text-white">Your Account</p>
+            <a type="button" class="btn btn-primary mb-3" href="{{ route('login') }}">Login</a>
+            <a type="button" class="btn btn-primary" href="{{ route('register') }}">Register</a>
+        </div>
     </div>
 
     <header class="container-fluid mx-0 px-0">
@@ -29,11 +33,11 @@
     </header>
 
     <main class="container">
-      <div class="row py-5">
+      <div class="row py-5 justify-content-center w-100">
         <div class="col-8 d-flex justify-content-center flex-nowrap">
           <!-- Search Bar -->
-          <form class="form-inline my-2 my-lg-0 d-flex flex-row flex-nowrap">
-            <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
+          <form class="form-inline my-2 my-lg-0 d-flex justify-content-center flex-row flex-nowrap w-100">
+            <input class="form-control mr-sm-2 search w-100" type="search" placeholder="Keyword..." aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0 w-50" type="submit">Search</button>
           </form>
         </div>
@@ -102,14 +106,14 @@
 
         <div class="collapse" id="vision">
           <div class="card card-body">
-              <img src="{{ secure_asset('images/vision_header.jpg') }}" class="img-fluid">
+              <img src="{{ secure_asset('images/vision_small.jpg') }}" class="img-fluid">
               <p class="card-title">Copper mug photo booth</p>
               <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
               <a href="{{ route('vision') }}" class="card-txt text-right">Read more</a>
           </div>
           <div class="card card-body">
-            <img src="{{ secure_asset('images/vision_header.jpg') }}" class="img-fluid">
-            <p class="card-title">Copper mug photo booth</p>
+            <img src="{{ secure_asset('images/vision_small.jpg') }}" class="img-fluid">
+            <p class="card-title">Copper mug photo booth 2</p>
             <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
             <p><a href="{{ route('vision') }}" class="card-txt text-right">Read more</a></p>
           </div>
@@ -129,7 +133,7 @@
           </div>
           <div class="card card-body">
             <img src="http://via.placeholder.com/600x300" class="img-fluid">
-            <p class="card-title">Copper mug photo booth</p>
+            <p class="card-title">Copper mug photo booth 2</p>
             <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
             <a href="#" class="card-txt text-right">Read more</a>
           </div>
@@ -137,7 +141,7 @@
 
 <!-- DESKTOP -->
         <div class="col-6 d-none d-md-flex flex-column">
-          <img src="{{ secure_asset('images/vision_header.jpg') }}" class="img-fluid">
+          <img src="{{ secure_asset('images/vision_small.jpg') }}" class="img-fluid">
           <div class="px-3 pt-3">
             <p class="card-title">Copper mug photo booth</p>
             <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
@@ -145,11 +149,11 @@
           </div>
         </div>
         <div class="col-6 d-none d-md-flex flex-column">
-          <img src="{{ secure_asset('images/vision_header.jpg') }}" class="img-fluid">
+          <img src="{{ secure_asset('images/vision_small.jpg') }}" class="img-fluid">
           <div class="px-3 pt-3">
-            <p class="card-title">Copper mug photo booth</p>
+            <p class="card-title">Copper mug photo booth 2</p>
             <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
-            <a href="{{ route('vision') }}" class="card-txt text-right">Read more</a>
+            <a href="{{ route('vision') }}#2" class="card-txt text-right">Read more</a>
           </div>
         </div>
       </div>
@@ -168,7 +172,7 @@
         <div class="col-6 d-none d-md-flex justify-content-center flex-column">
           <img src="http://via.placeholder.com/600x300" class="img-fluid">
           <div class="px-3 pt-3">
-            <p class="card-title">Copper mug photo booth</p>
+            <p class="card-title">Copper mug photo booth 2</p>
             <p class="card-txt">Intelligentsia health goth affogato activated charcoal. Pop-up four dollar toast lumbersexual semiotics austin microdosing... </p>
             <a href="#" class="card-txt text-right">Read more</a>
           </div>
