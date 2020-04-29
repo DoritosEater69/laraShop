@@ -49,47 +49,21 @@
         </div>
       </div>
 
+
+<!-- GENERATE! -->
       <div class="row overflow-auto mb-5" style="height: 550px;" id="categories">
-        <div class="col-12 col-md-6 px-0 mx-0 cat">
-          <a href="{{ route('hoodies') }}">
-          <img src="{{ secure_asset('images/hood.jpg') }}" alt="" class="img-fluid">
-          <div class="cat-overlay d-flex justify-content-center align-items-center">
-            <div class="overlay-header h-100 w-100 pl-4">Female - Hoodies
-              <p class="overlay-text">I'm baby chia VHS dreamcatcher</p>
+        @foreach($categories as $cat)
+        <div class="col-12 col-md-6 px-0 mx-0 cat w-100">
+          <a href="{{ route('Product.hoodies') }}">
+            <img src="{{ $cat->imgPath }}" alt="" class="img-fluid">
+            <div class="cat-overlay d-flex justify-content-center align-items-center w-100">
+              <div class="overlay-header h-100 w-100 pl-4">{{ $cat->title }}
+                <p class="overlay-text">{{ $cat->description }}</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
         </div>
-        <div class="col-12 col-md-6 px-0 mx-0 cat">
-          <a href="{{ route('pants') }}">
-          <img src="{{ secure_asset('images/pants.jpg') }}" alt="" class="img-fluid">
-          <div class="cat-overlay d-flex justify-content-center align-items-center">
-            <div class="overlay-header h-100 w-100 pl-4">Men - Pants
-              <p class="overlay-text">I'm baby chia VHS dreamcatcher, narwhal. </p>
-            </div>
-          </div>
-        </a>
-        </div>
-        <div class="col-12 col-md-6 px-0 mx-0 cat">
-          <a href="{{ route('shirts') }}">
-          <img src="{{ secure_asset('images/shirt.jpg') }}" alt="" class="img-fluid">
-          <div class="cat-overlay d-flex justify-content-center align-items-center">
-            <div class="overlay-header h-100 w-100 pl-4">Men - Shirts
-              <p class="overlay-text">I'm baby chia, artisan YOLO raclette mixtape. </p>
-            </div>
-          </div>
-        </a>
-        </div>
-        <div class="col-12 col-md-6 px-0 mx-0 cat">
-          <a href="{{ route('shoes') }}">
-          <img src="{{ secure_asset('images/shoes.jpg') }}" alt="" class="img-fluid">
-          <div class="cat-overlay d-flex justify-content-center align-items-center">
-            <div class="overlay-header h-100 w-100 pl-4">Men - Shoes
-              <p class="overlay-text">I'm baby chia VHS dreamcatcher mixtape. </p>
-            </div>
-          </div>
-        </a>
-        </div>
+        @endforeach
       </div>
 </main>
 

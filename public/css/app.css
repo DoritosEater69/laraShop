@@ -10909,6 +10909,29 @@ ul {
   color: black !important;
 }
 
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: inherit;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  color: white;
+}
+
+.modal-header {
+  border-bottom: 0 !important;
+}
+
+.modal-body {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
 @-webkit-keyframes slideFromTop {
   0% {
     opacity: 0;
@@ -11007,6 +11030,11 @@ h2 {
   border-bottom: 4px solid black;
 }
 
+h5 {
+  font-family: "Bebas Neue";
+  font-size: 2em;
+}
+
 header {
   background-color: black;
   color: white;
@@ -11086,6 +11114,10 @@ header a:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.cat-overlay .overlay-text {
+  font-size: 0.8em;
+}
+
 .overlay-header {
   font-family: "Bebas Neue";
   font-size: 2em;
@@ -11109,6 +11141,16 @@ header a:hover {
 
 .vision p {
   font-size: 1.2em;
+}
+
+.modal {
+  z-index: 9999999999;
+}
+
+.btn-card {
+  background-color: #e8b923;
+  color: black;
+  font-family: "Bebas Neue";
 }
 
 footer {

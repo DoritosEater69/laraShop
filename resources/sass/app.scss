@@ -24,6 +24,11 @@ h2{
     border-bottom: 4px solid black;
 }
 
+h5{
+    font-family: 'Bebas Neue';
+    font-size: 2em;
+}
+
 header{
     background-color: black;
     color: white;
@@ -81,7 +86,6 @@ header a:hover{
 
 .overlay-text{
     width: 100%;
-
 }
 
 .highlight{
@@ -108,6 +112,9 @@ header a:hover{
     background-color: rgba(0,0,0,0.8);
 }
 
+.cat-overlay .overlay-text{
+    font-size: 0.8em;
+}
 
 .overlay-header{
     font-family: 'Bebas Neue';
@@ -132,6 +139,16 @@ header a:hover{
 
 .vision p{
     font-size: 1.2em;
+}
+
+.modal{
+    z-index: 9999999999;
+}
+
+.btn-card{
+    background-color: #e8b923;
+    color: black;
+    font-family: 'Bebas Neue';
 }
 
 footer{

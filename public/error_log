@@ -8,3 +8,18 @@ Stack trace:
 #0 {main}
   thrown in /var/www/html/git/_programming/web/laraShop/public/index.php on line 51
 [27-Apr-2020 14:57:55 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\products, because the name is already in use in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/ProductController.php on line 14
+[29-Apr-2020 08:12:44 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\LoginController, because the name is already in use in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/Auth/LoginController.php on line 10
+[29-Apr-2020 08:13:43 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\LoginController, because the name is already in use in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/Auth/LoginController.php on line 10
+[29-Apr-2020 08:13:50 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\LoginController, because the name is already in use in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/Auth/LoginController.php on line 10
+[29-Apr-2020 08:13:57 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\LoginController, because the name is already in use in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/Auth/LoginController.php on line 10
+[29-Apr-2020 08:13:59 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\LoginController, because the name is already in use in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/Auth/LoginController.php on line 10
+[29-Apr-2020 08:14:07 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\LoginController, because the name is already in use in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/Auth/LoginController.php on line 10
+[29-Apr-2020 08:14:14 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\LoginController, because the name is already in use in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/Auth/LoginController.php on line 10
+[29-Apr-2020 08:15:14 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\LoginController, because the name is already in use in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/Auth/LoginController.php on line 10
+[29-Apr-2020 08:18:31 UTC] PHP Warning:  Unexpected character in input:  ' in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/Auth/LoginController.php on line 11
+[29-Apr-2020 08:18:31 UTC] PHP Warning:  Unexpected character in input:  ' in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/Auth/LoginController.php on line 11
+[29-Apr-2020 08:18:31 UTC] PHP Warning:  Unexpected character in input:  ' in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/Auth/LoginController.php on line 11
+[29-Apr-2020 08:18:31 UTC] PHP Warning:  Unexpected character in input:  ' in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/Auth/LoginController.php on line 11
+[29-Apr-2020 08:18:31 UTC] PHP Warning:  Unexpected character in input:  ' in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/Auth/LoginController.php on line 11
+[29-Apr-2020 08:18:31 UTC] PHP Warning:  Unexpected character in input:  ' in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/Auth/LoginController.php on line 11
+[29-Apr-2020 08:18:31 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\LoginAuth, because the name is already in use in /var/www/html/git/_programming/web/laraShop/app/Http/Controllers/Auth/LoginController.php on line 10

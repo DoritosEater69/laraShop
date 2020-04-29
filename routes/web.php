@@ -11,12 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.home.welcome');
-})->name('home');
+Route::get('/', [
+    'uses' => 'CategoriesController@getIndex',
+    'as' => 'Categories.categories'
+]);
 
 Route::get('/hoodies', [
-    'uses' => 'ProductController@getProducts',
+    'uses' => 'ProductController@getIndex',
     'as' => 'Product.hoodies'
 ]);
 
@@ -38,11 +39,11 @@ Route::get('/vision', function () {
 
 
 Route::get('/login', function () {
-    return view('auth.login');
+    return view('login');
 })->name('login');
 
 Route::get('/register', function () {
-    return view('auth.register');
+    return view('register');
 })->name('register');
 
 
