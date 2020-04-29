@@ -39,12 +39,16 @@ Route::get('/vision', function () {
 
 
 Route::get('/login', function () {
-    return view('login');
+    return view('auth.login');
 })->name('login');
 
 Route::get('/register', function () {
-    return view('register');
+    return view('auth.register');
 })->name('register');
+
+Route::get('/verify', function () {
+    return view('auth.verify');
+})->name('verify');
 
 
 Auth::routes();
