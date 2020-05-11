@@ -16,6 +16,10 @@ Route::get('/', [
     'as' => 'Categories.categories'
 ]);
 
+Route::get('/{category}', function ($category) {
+    return view('frontend.partials.', compact($category));
+});
+
 Route::get('/hoodies', [
     'uses' => 'ProductController@getIndex',
     'as' => 'Product.hoodies'

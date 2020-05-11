@@ -39,5 +39,12 @@ class CategoryTableSeeder extends Seeder
         ]);
         $categories->save();
 
+        $categories = new App\Categories([
+            'imgPath' => 'images/accessories_header.jpg',
+            'title' => 'Shoes',
+            'description' => 'Im baby chia VHS dreamcatcher mixtape.'
+        ]);
+        $categories->save();
+
     }
 }
