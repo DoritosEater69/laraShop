@@ -17,7 +17,7 @@ Route::get('/', [
 ]);
 
 Route::get('/{category}', function ($category) {
-    return view('frontend.partials.', compact($category));
+     return view('frontend.partials.{$category}');
 });
 
 Route::get('/hoodies', [

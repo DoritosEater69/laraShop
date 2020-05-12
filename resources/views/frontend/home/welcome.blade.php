@@ -52,7 +52,7 @@
 
 <!-- GENERATE! -->
       <div class="row overflow-auto mb-5" style="height: 550px;" id="categories">
-        @foreach($categories as $cat)
+      @foreach ($category as $cat)
         <div class="col-12 col-md-6 px-0 mx-0 cat w-100">
           <a href="{{ route('Product.hoodies') }}">
             <img src="{{ $cat->imgPath }}" alt="" class="img-fluid">

@@ -7,9 +7,8 @@ use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
 {
-
     public function getIndex(){
-        $categories = Categories::all();
-        return view('frontend.home.welcome', ['categories' => $categories]);
+        $category = Categories::all();
+        return view('frontend.home.welcome', ['category' => $category]);
     }
 }
