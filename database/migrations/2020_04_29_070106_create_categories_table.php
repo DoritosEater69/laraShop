@@ -19,6 +19,7 @@ class CreateCategoriesTable extends Migration
             $table->string('imgPath');
             $table->string('title');
             $table->string('description');
+            $table->string('route');
         });
     }
 

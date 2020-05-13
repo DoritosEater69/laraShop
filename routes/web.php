@@ -17,8 +17,12 @@ Route::get('/', [
 ]);
 
 Route::get('/{category}', function ($category) {
-     return view('frontend.partials.{$category}');
+     return view('frontend.home.welcome');
 });
+
+Route::get('/', function () {
+    return view('frontend.home.welcome');
+})->name('home');
 
 Route::get('/hoodies', [
     'uses' => 'ProductController@getIndex',

@@ -11,40 +11,45 @@ class CategoryTableSeeder extends Seeder
      */
     public function run()
     {
-        $categories = new App\Categories([
+        $category = new App\Categories([
             'imgPath' => 'images/hood.jpg',
             'title' => 'Hoodies',
-            'description' => 'Im baby chia VHS dreamcatcher'
+            'description' => 'Im baby chia VHS dreamcatcher',
+            'route' => 'hoodies'
         ]);
-        $categories->save();
+        $category->save();
 
-        $categories = new App\Categories([
+        $category = new App\Categories([
             'imgPath' => 'images/pants.jpg',
             'title' => 'Pants',
-            'description' => 'Im baby chia VHS dreamcatcher, narwhal.'
+            'description' => 'Im baby chia VHS dreamcatcher, narwhal.',
+            'route' => 'pants'
         ]);
-        $categories->save();
+        $category->save();
 
-        $categories = new App\Categories([
+        $category = new App\Categories([
             'imgPath' => 'images/shirt.jpg',
             'title' => 'Shirts',
-            'description' => 'Im baby chia, artisan YOLO raclette mixtape.'
+            'description' => 'Im baby chia, artisan YOLO raclette mixtape.',
+            'route' => 'shirt'
         ]);
-        $categories->save();
+        $category->save();
 
-        $categories = new App\Categories([
+        $category = new App\Categories([
             'imgPath' => 'images/shoes.jpg',
             'title' => 'Shoes',
-            'description' => 'Im baby chia VHS dreamcatcher mixtape.'
+            'description' => 'Im baby chia VHS dreamcatcher mixtape.',
+            'route' => 'shoes'
         ]);
-        $categories->save();
+        $category->save();
 
-        $categories = new App\Categories([
+        $category = new App\Categories([
             'imgPath' => 'images/accessories_header.jpg',
             'title' => 'Shoes',
-            'description' => 'Im baby chia VHS dreamcatcher mixtape.'
+            'description' => 'Im baby chia VHS dreamcatcher mixtape.',
+            'route' => 'accessories'
         ]);
-        $categories->save();
+        $category->save();
 
     }
 }
