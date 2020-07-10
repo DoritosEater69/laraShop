@@ -11,14 +11,14 @@
 |
 */
 
-Route::get('/', [
-    'uses' => 'CategoriesController@getIndex',
-    'as' => 'Categories.categories'
-]);
+// Route::get('/', [
+//     'uses' => 'CategoriesController@getIndex',
+//     'as' => 'Categories.categories'
+// ]);
 
-Route::get('/{category}', function ($category) {
-     return view('frontend.home.welcome');
-});
+// Route::get('/{category}', function ($category) {
+//      return view('frontend.home.welcome');
+// });
 
 Route::get('/', function () {
     return view('frontend.home.welcome');

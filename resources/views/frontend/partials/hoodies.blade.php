@@ -4,7 +4,7 @@
     <header class="container-fluid mx-0 px-0">
       <div class="row d-flex align-items-center flex-row flex-md-row-reverse">
         <div class="col-12 col-md-6 d-flex justify-content-end">
-          <a href="{{ route('Categories.categories') }}" class="w-100 h-100">
+          <a href="{{ route('home') }}" class="w-100 h-100">
             <h1 class="overlayBack p-3">Back</h1>
           </a>
         </div>

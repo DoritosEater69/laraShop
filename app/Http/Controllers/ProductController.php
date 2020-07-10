@@ -7,9 +7,8 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-
-public function getIndex(){
-    $products = Product::all();
-    return view('frontend.partials.hoodies', ['products' => $products]);
+    public function getIndex(){
+        $products = Product::all();
+        return view('frontend.partials.hoodies', ['products' => $products]);
     }
 }
